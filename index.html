@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <div class="content-wrapper">
+    <header>
+        <div class="header-content">
+          <div class="header-text">
+            <h1 class="title">Jaguar Car Services</h1>
+            <p class="tagline">When only a Jaguar will do for your ride</p>
+          </div>
+          <div class="icon-image">
+            <img src="images/jaguar-logo.png" class="icon" alt="jaguar icon">
+          </div>
+        </div>
+      </div> <!-- .header content -->
+    </header>
+    <nav>
+      <ul class="nav-tabs">
+        <li><a href="#" class="nav-link">About Us</a></li>
+        <li><a href="#" class="active nav-link">Our Cost</a></li>
+        <li><a href="#" class="nav-link">Contact Us</a></li>
+      </ul>
+    </nav>
+    <main>
+      <form action="#" method="post" id="cost-form" class="form">
+        <fieldset class="choose-cars">
+          <legend>Choose Your Car</legend>
+          <div class="container container-cars">
+            <div class="car-checkboxes">
+              <label for="car1">
+                <input type="radio" class="car" id="car1" aria-label="which car" name="whichCar" value="car1" checked>
+                NEW XE - COMPACT SPORT SEDAN
+              </label>
+              <label for="car2">
+                <input type="radio" class="car" id="car2" aria-label="which car" name="whichCar" value="car2">
+                XF - MID-SIZE LUXURY SEDAN
+              </label>
+              <label for="car3">
+                <input type="radio" class="car" id="car3" aria-label="which car" name="whichCar" value="car3">
+                XJ - PREMIUM LUXURY SEDAN
+              </label>
+              <label for="car4">
+                <input type="radio" class="car" id="car4" aria-label="which car" name="whichCar" value="car4">
+                F-PACE - LUXURY SUV
+              </label>
+            </div>
+            <div class="car-image">
+              <img class="car-pic" id="car-pic" src="images/car1.png" alt="image of car">
+            </div>
+          </div> <!-- .container-cars -->
+        </fieldset>
+        <fieldset class="about-ride">
+          <legend>About Your Ride</legend>
+          <div class="continer container-ride">
+            <label for="distance">How Far are you going (in miles)? </label>
+            <input type="number" class="input-field" id="distance" name="distance" placeholder="0" required>
+            <label for="time">How long will your ride take (in minutes)? </label>
+            <input type="number" class="input-field" id="time" name="time" placeholder="0" required>
+            <button type="submit" class="btn btn-cost">Get Your Cost</button>
+            <div class="cost-section">The Cost of your ride: $<span class="total"></span></div>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <footer><p class="copyright">&#169;Jaguar Car Services</p></footer>
+  </div> <!-- .content-wrapper -->
+  <script src="index.js"></script>
+</body>
+</html>
