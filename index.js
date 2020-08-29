@@ -1,8 +1,8 @@
 //Calculate Cost for All Cars
 function fareEstimator(rideTime, rideDistance, costPerMinute, costPerMile) {
-  let timeCost = costPerMinute.map(perMinute => perMinute * rideTime);
-  let distanceCost = costPerMile.map(perMile => perMile * rideDistance);
-  let totalCost = timeCost.map((time, index) => time + distanceCost[index]); 
+  const timeCost = costPerMinute.map(perMinute => perMinute * rideTime);
+  const distanceCost = costPerMile.map(perMile => perMile * rideDistance);
+  const totalCost = timeCost.map((time, index) => time + distanceCost[index]); 
 
   return totalCost;
 }
