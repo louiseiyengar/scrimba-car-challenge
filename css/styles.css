@@ -25,9 +25,9 @@ header {
   border-top: 3px solid #707070;
   border-bottom: 3px solid #707070;
   box-shadow: 5px 10px 18px #888888;
-  background-color: #f9e3af;
-  background-image: url('../images/jaguar-background.jpg');
-  background-blend-mode: overlay;
+  /* background-color: #f9e3af; */
+  background-image: url('../images/jaguar-background-test.jpg');
+  /* background-blend-mode: overlay; */
 } 
 
 fieldset {
@@ -102,8 +102,8 @@ footer {
   padding: 2em 0;
   border-top: 3px solid #707070;
   background-color: #f9e3af;
-  background-image: url('../images/jaguar-background.jpg');
-  background-blend-mode: overlay;
+  background-image: url('../images/jaguar-background-test.jpg');
+  /* background-blend-mode: overlay; */
 }
 
 footer > p {
