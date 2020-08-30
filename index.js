@@ -29,8 +29,8 @@ function displayCarTotal(whichCar, costAllCars) {
     default:
       showTotal.textContent = costAllCars[0].toFixed(2);
   }
-  showTotalArea.style.display = 'block';
-
+  // showTotalArea.style.display = 'block';
+    showTotalArea.style.visibility = 'visible';
 }
 
 /* show the car image after radio button clicked */
